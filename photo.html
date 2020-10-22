@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--
+Alexis Kinzey
+9-28
+ITD210
+--> 
+	<meta charset="utf-8" />
+
+
+	<title>Aqua Care Pool Service</title>
+	<link href="photo.css" rel="stylesheet"/>
+	
+	
+	</head>
+	<body>
+<!-- navigation bar -->
+	<div class="topnav">
+  <a href="contact.html">Contact</a>
+  <a href="active" href="photo.html">Photos</a>
+  <a href="social.html">Social Media</a>
+  <a href="servicesoffered.html">Services</a>
+  <a href="home.html">Home</a>
+	</div>
+<!-- navigation bar -->
+
+	<header>
+		<h1>Aqua Care Pool Service</h1>
+		
+	</header>
+	
+	<div class="pool" style="background-color: #f6ede3;">
+	<hr>
+	
+	<h2>Photo Gallery </h2>
+	
+	<img src="images/water.jpg" alt="Before" width="800" height="300">
+	<img src="images/one.jpg" alt="After" width="800" height="300">
+`	<img src="images/guy.jpg" alt="pump" width="800" height="300">
+
+<body>
+
+<h2 class="w3-center">Automatic Slideshow</h2>
+
+<div class="w3-content w3-section" style="max-width:3000px">
+  <img class="mySlides" src="images/4.jpg" style="width:100%">
+  <img class="mySlides" src="images/5.jpg" style="width:100%">
+  <img class="mySlides" src="images/6.jpg" style="width:100%">
+  
+   <img class="mySlides" src="images/7.jpg" style="width:100%">
+  <img class="mySlides" src="images/01.jpg" style="width:100%">
+  <img class="mySlides" src="images/8.jpg" style="width:100%">
+  
+   <img class="mySlides" src="images/9.jpg" style="width:100%">
+  <img class="mySlides" src="images/10.jpg" style="width:100%">
+  <img class="mySlides" src="images/14.jpg" style="width:100%">
+  
+   <img class="mySlides" src="images/15.jpg" style="width:100%">
+  <img class="mySlides" src="images/16.jpg" style="width:100%">
+  <img class="mySlides" src="images/17.jpg" style="width:100%">
+  
+   <img class="mySlides" src="images/20.jpg" style="width:100%">
+  <img class="mySlides" src="images/21.jpg" style="width:100%">
+  <img class="mySlides" src="images/22.jpg" style="width:100%">
+  
+   <img class="mySlides" src="images/23.jpg" style="width:100%">
+  <img class="mySlides" src="images/24.jpg" style="width:100%">
+  <img class="mySlides" src="images/28.jpg" style="width:100%">
+  
+   <img class="mySlides" src="images/26.jpg" style="width:100%">
+  <img class="mySlides" src="images/27.jpg" style="width:100%">
+  <img class="mySlides" src="images/40.jpg" style="width:100%">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+</script>
+</body>
+</html>
